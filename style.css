@@ -1,0 +1,372 @@
+/* important for while page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #B40025;
+    --pink: #b3806f80;
+    --black: #000000;
+    --heavypink: #b3806f;
+}
+
+body {
+    background-color: #B3806F;
+    font-family: sans-serif;
+}
+
+
+
+/* Navbar1 Container */
+.Container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px red solid; */
+    background-color: var(--black);
+    color: var(--pink);
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+        /* Navbar elements */
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    /* border: 1px red solid; */
+    width: 117px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+}
+
+        /* Navbar elements hover */
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover {
+    color: var(--heavypink);
+    background-color: var(--red);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 100%;
+
+
+}
+
+/* Navbar2 Container */
+.Container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px red solid; */
+    background-color: var(--black);
+    color: var(--pink);
+    height: 80px;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+        /* Navbar elements */
+.box7,
+.box8,
+.box9 {
+    /* border: 1px red solid; */
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        /* logo properties */
+.box7 a {
+    height: 100%;
+}
+
+.box7 a img {
+    width: 220px;
+}
+
+        /* box margin */
+.box8 {
+    margin-left: 1em;
+}
+
+.box9 {
+    margin-right: 1em;
+}
+
+.smallContainer2 {
+    display: flex;
+}
+
+        /* searchbox */
+
+.searchbox {
+    width: 300px;
+    height: 34px;
+    border-radius: 20px;
+    background-color: #EBEBEB;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon1 {
+    color: #B3B3B3;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.inputsearch {
+    border: none;
+    background-color: #EBEBEB;
+    outline: none;
+    width: 100%;
+    border-radius: 0px 40px 40px 0px;
+}
+        /* login and signup bar */
+
+.smallContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--heavypink);
+    /* border: 1px red solid; */
+
+
+}
+
+.smallContainer i {
+    color: #B3B3B3;
+    color: var(--red);
+    font-size: 2rem;
+    margin: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+.smallContainer i:hover {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.smallContainer .signup {
+    color: var(--red);
+}
+
+.signin,.signup {
+    cursor: pointer;
+}
+
+
+/* Navbar3 Container */
+.Container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #772432;
+    color: #D6BEC2;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 12px;
+    /* border: 1px red solid; */
+}
+
+        /* Navbar elements */
+.box10,
+.box11,
+.box12,
+.box13{
+    /* border: 1px red solid; */
+    width: 123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    height: 100%;
+}
+
+        /* Navbar elements hover */
+.box10:hover,
+.box11:hover,
+.box12:hover,
+.box13:hover {
+    color: #D6BEC2;
+    background-color: #A06670;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+        /* cart icon */
+
+.icon3 {
+    font-size: 1rem;
+    margin-right: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.icon3:hover {
+    animation: ring 3s .1s ease-in-out infinite;
+    transform-origin: 50% 4px;
+}
+
+@keyframes ring {
+    0% { -webkit-transform: rotateZ(0); }
+    16% { -webkit-transform: rotateZ(30deg); }
+    32% { -webkit-transform: rotateZ(-30deg); }
+    48% { -webkit-transform: rotateZ(30deg); }
+    64% { -webkit-transform: rotateZ(-30deg); }
+    80% { -webkit-transform: rotateZ(30deg); }
+    96% { -webkit-transform: rotateZ(0deg); }
+    
+  }
+
+section img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .searchbox {
+        width: 250px;
+    }
+
+    .signup,
+    .signin {
+        display: none;
+    }
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box10,
+.box11,
+.box12,
+.box13 {
+    font-size: 0.6rem;
+}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .searchbox {
+        width: 70px;
+    }
+
+    .signup,
+    .signin {
+        display: none;
+    }
+
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box10,
+    .box11,
+    .box12,
+    .box13 {
+        font-size: 0.5rem;
+    }
+
+    .box9 {
+        margin-right: 0px;
+    }
+
+    .searchbox:hover {
+        border-radius: 0px;
+    }
+
+    .inputsearch:hover {
+        border-radius: 0px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 400px) {
+    .searchbox {
+        width: 70px;
+    }
+
+    .signup,
+    .signin {
+        display: none;
+    }
+
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box10,
+    .box11,
+    .box12,
+    .box13 {
+        font-size: 0.4rem;
+    }
+
+    .box9 {
+        margin-right: 0px;
+    }
+
+    .searchbox:hover {
+        border-radius: 0px;
+    }
+
+    .inputsearch:hover {
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .searchbox {
+        width: 70px;
+    }
+
+    .signup,
+    .signin {
+        display: none;
+    }
+
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box10,
+    .box11,
+    .box12,
+    .box13 {
+        font-size: 0.4rem;
+    }
+
+    .box9 {
+        margin-right: 0px;
+    }
+
+    .searchbox {
+        display: none;
+    }
+}
